@@ -1,12 +1,13 @@
 
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class Topbox extends StatelessWidget {
   final String bagtype;
   final String bagname;
   final String price;
 
-  const Topbox(
+   Topbox(
       {super.key,
         required this.bagtype,
         required this.bagname,
@@ -25,35 +26,32 @@ class Topbox extends StatelessWidget {
           Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
             Text(
               bagtype,
-              style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 15,
-                  fontWeight: FontWeight.w500),
+              style:GoogleFonts.poppins( color: Colors.white,
+                  fontSize: 13,
+                  fontWeight: FontWeight.w500)
             ),
             Text(
               bagname,
-              style: TextStyle(
+              style: GoogleFonts.poppins(
                 color: Colors.white,
-                fontSize: 40,
+                fontSize: 30,
                 fontWeight: FontWeight.w600,
               ),
             ),
             SizedBox(
-              height: 60,
+              height: 90,
             ),
             Text(
               "Price",
-              style: TextStyle(
-                  color: Colors.white,
+              style: GoogleFonts.poppins( color: Colors.white,
                   fontSize: 15,
-                  fontWeight: FontWeight.w500),
+                  fontWeight: FontWeight.w500)
             ),
             Text(
               price,
-              style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 30,
-                  fontWeight: FontWeight.bold,
+              style: GoogleFonts.poppins(color: Colors.white,
+                  fontSize: 25,
+                  fontWeight: FontWeight.w600,
                   letterSpacing: 1),
             )
           ]),

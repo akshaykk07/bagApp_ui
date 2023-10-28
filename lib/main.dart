@@ -1,4 +1,5 @@
 import 'package:bag_app/home.dart';
+import 'package:bag_app/pages/cat.dart';
 import 'package:bag_app/pages/page1.dart';
 import 'package:bag_app/pages/page2.dart';
 import 'package:flutter/material.dart';
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: page2()
+      home: home()
     );
   }
 }

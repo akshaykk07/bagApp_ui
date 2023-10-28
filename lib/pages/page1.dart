@@ -44,7 +44,7 @@ class page1 extends StatelessWidget {
       backgroundColor: mainColor1,
       body: Stack(children: [
         Column(children: [
-          const Expanded(
+           Expanded(
               flex: 3,
               child: Topbox(
                   bagtype: "Aristrocratic Hand Bag",
@@ -52,7 +52,7 @@ class page1 extends StatelessWidget {
                   price: "\$234")),
           Expanded(
               flex: 6,
-              child: Bottombox(
+              child: Bottombox(ccircle: mainColor1,
                 description:
                     "The super-stylish Walker leather unisex duffle bag is undoubtedly a trendsetter all year. This opulent,oblong weekender bag is made of the finest quality goat leather,accentuated with intricate detailing on the stitches. ",
                 btncolr: mainColor1,

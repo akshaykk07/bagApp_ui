@@ -12,7 +12,7 @@ class page3 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: mainColor3,
+        backgroundColor: mainColor4,
         elevation: 0,
         leading: IconButton(
           onPressed: () {
@@ -41,10 +41,10 @@ class page3 extends StatelessWidget {
           )
         ],
       ),
-      backgroundColor: mainColor3,
+      backgroundColor: mainColor4,
       body: Stack(children: [
         Column(children: [
-          const Expanded(
+           Expanded(
               flex: 3,
               child: Topbox(
                   bagtype: "Aristrocratic Hand Bag",
@@ -52,15 +52,15 @@ class page3 extends StatelessWidget {
                   price: "\$250")),
           Expanded(
               flex: 6,
-              child: Bottombox(
+              child: Bottombox(ccircle: mainColor4,
                 description:
                 "The super-stylish Walker leather unisex duffle bag is undoubtedly a trendsetter all year. This opulent,oblong weekender bag is made of the finest quality goat leather,accentuated with intricate detailing on the stitches. ",
-                btncolr: mainColor3,
+                btncolr: mainColor4,
                 Size: "10 cm",
               )),
         ]),
         const Positioned(left: 120,top: 10,right: 5,
-            child: img(image:  "assets/bg4.png",)
+            child: img(image:  "assets/bg5.png",)
         )
       ]),
     );

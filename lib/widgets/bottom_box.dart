@@ -3,16 +3,18 @@ import 'package:bag_app/widgets/buybtn.dart';
 import 'package:bag_app/widgets/color_circle.dart';
 import 'package:bag_app/widgets/color_theam.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class Bottombox extends StatelessWidget {
   final String description;
   final Color btncolr;
   final String Size;
+  final Color ccircle;
 
   const Bottombox(
       {super.key,
         required this.description,
-        required this.btncolr, required this.Size});
+        required this.btncolr, required this.Size, required this.ccircle});
 
   @override
   Widget build(BuildContext context) {
@@ -24,26 +26,26 @@ class Bottombox extends StatelessWidget {
           borderRadius: BorderRadius.only(
               topLeft: Radius.circular(25), topRight: Radius.circular(25))),
       child: Padding(
-        padding: EdgeInsets.only(left: 20, right: 20, top: 70),
+        padding: EdgeInsets.only(left: 20, right: 20, top: 50),
         child: Column(children: [
-         Ccircle(size: Size),
+         Ccircle(size: Size,Colrcircle:ccircle),
           SizedBox(height: 10,),
           SizedBox(
             height: 100,
             width: double.infinity,
             child: Text(
               description,
-              style: TextStyle(fontSize: 13, letterSpacing: 1),
+              style: GoogleFonts.poppins(fontSize: 12, letterSpacing:1,wordSpacing: 1),
             ),
           ),
           SizedBox(
-            height: 15,
+            height: 10,
           ),
           Addbtn(),
           SizedBox(
             height: 20,
           ),
-         Buybtn(theam: btncolr)
+         Buybtn(theam: btncolr,)
         ]),
       ),
     );

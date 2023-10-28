@@ -6,12 +6,15 @@ class img extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      child: Image.asset(
-       image,
-        fit: BoxFit.cover,
-        height: 300,
-        width: 250,
+    return Padding(
+      padding: const EdgeInsets.all(20),
+      child: SizedBox(
+        child: Image.asset(
+         image,
+          fit: BoxFit.cover,
+          height: 300,
+          width: 250,
+        ),
       ),
     );
   }

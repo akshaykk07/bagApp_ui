@@ -5,14 +5,14 @@ import 'package:flutter/material.dart';
 
 import '../widgets/color_theam.dart';
 
-class page2 extends StatelessWidget {
-  const page2({super.key});
+class page6 extends StatelessWidget {
+  const page6({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: mainColor2,
+        backgroundColor: mainColor6,
         elevation: 0,
         leading: IconButton(
           onPressed: () {
@@ -41,26 +41,26 @@ class page2 extends StatelessWidget {
           )
         ],
       ),
-      backgroundColor: mainColor2,
+      backgroundColor: mainColor6,
       body: Stack(children: [
         Column(children: [
-           Expanded(
+          Expanded(
               flex: 3,
               child: Topbox(
                   bagtype: "Aristrocratic Hand Bag",
-                  bagname: ("Office Bag"),
-                  price: "\$234")),
+                  bagname: ("Party Bag"),
+                  price: "\$250")),
           Expanded(
               flex: 6,
-              child: Bottombox(ccircle: mainColor2,
+              child: Bottombox(ccircle: mainColor6,
                 description:
                 "The super-stylish Walker leather unisex duffle bag is undoubtedly a trendsetter all year. This opulent,oblong weekender bag is made of the finest quality goat leather,accentuated with intricate detailing on the stitches. ",
-                btncolr: mainColor2,
-                Size: "12 cm",
+                btncolr: mainColor6,
+                Size: "10 cm",
               )),
         ]),
-        const Positioned(left: 120,top: -5,right: 5,
-            child: img(image:  "assets/bag3.png",)
+        const Positioned(left: 120,top: -10,right: 5,
+            child: img(image:  "assets/bg9.png",)
         )
       ]),
     );

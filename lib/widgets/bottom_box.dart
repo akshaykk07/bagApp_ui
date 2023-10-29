@@ -29,21 +29,21 @@ class Bottombox extends StatelessWidget {
         padding: EdgeInsets.only(left: 20, right: 20, top: 50),
         child: Column(children: [
          Ccircle(size: Size,Colrcircle:ccircle),
-          SizedBox(height: 10,),
+          SizedBox(height: 20,),
           SizedBox(
             height: 100,
             width: double.infinity,
             child: Text(
               description,
-              style: GoogleFonts.poppins(fontSize: 12, letterSpacing:1,wordSpacing: 1),
+              style: GoogleFonts.roboto(fontSize: 12, letterSpacing:1,wordSpacing: 1),
             ),
           ),
           SizedBox(
-            height: 10,
+            height: 20,
           ),
           Addbtn(),
           SizedBox(
-            height: 20,
+            height: 10,
           ),
          Buybtn(theam: btncolr,)
         ]),

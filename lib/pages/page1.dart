@@ -59,7 +59,7 @@ class page1 extends StatelessWidget {
                 Size: "8 cm",
               )),
         ]),
-        const Positioned(left: 120,top: 10,right: 5,
+        const Positioned(left: 90,top: 10,right: 5,
           child: img(image:  "assets/bg1.png",)
         )
       ]),
